@@ -6,20 +6,15 @@ st.title('Pages with state')
 with st.echo():
 	page = st.radio('Page select', options=['A', 'B'])
 
-	state = get(a=0, b=0)
-
-	a = state.a
-	b = state.b
+	ret_state = get(a=0, b=0)
 	sum = 0
 
 	if page == 'A':
-		a = st.number_input('Enter a: ', value=state.a)
-		state.a = a
+		ret_state.a = st.number_input('Enter a: ', value=ret_state.a)
 	elif page == 'B':
-		b = st.number_input('Enter b: ',  value=state.b)
-		state.b = b
+		ret_state.b = st.number_input('Enter b: ',  value=ret_state.b)
 
-	sum = a+b
-	st.write('a: ', a)
-	st.write('b: ', b)
+	sum = ret_state.a + ret_state.b
+	st.write('a: ', ret_state.a)
+	st.write('b: ', ret_state.b)
 	st.write('sum: ', sum)

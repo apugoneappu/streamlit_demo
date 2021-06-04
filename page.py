@@ -10,9 +10,9 @@ with st.echo():
 	sum = 0
 
 	if page == 'A':
-		a = st.number_input('Enter a: ')
+		a = st.number_input('Enter a: ', value=a)
 	elif page == 'B':
-		b = st.number_input('Enter b: ')
+		b = st.number_input('Enter b: ', value=b)
 
 	sum = a+b
 	st.write('a: ', a)
