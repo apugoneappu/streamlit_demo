@@ -6,13 +6,15 @@ Presented as a ligtning talk on 4th June, 2021 at the Wadhwani Institute of Arti
 ### Steps to follow 
 1. Install the requirements  
 `pip install -r requirements.txt`
-1. Run any of the following files with the command  
+2. Run any of the following files with the command  
 `streamlit run <filename.py>`
    - `app1.py` 
    - `app2.py` 
    - `cropper.py` 
    - `page.py` 
    - `page_state.py` 
+3. You can run the streamlit demo with  
+`streamlit hello`
 
 ### Streamlit custom components
 Custom components are for additional widget functionality that is not covered by Streamlit widgets out-of-the-box
