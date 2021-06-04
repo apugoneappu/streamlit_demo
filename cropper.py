@@ -5,10 +5,10 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 
 # Upload an image and set some options for demo purposes
 st.header("Cropper Demo")
-img_file = st.sidebar.file_uploader(label='Upload a file', type=['png', 'jpg'])
+img_file = st.sidebar.file_uploader(label='Upload a file', type=['png', 'jpg', 'jpeg'])
 realtime_update = st.sidebar.checkbox(label="Update in Real Time", value=True)
 box_color = st.sidebar.color_picker(label="Box Color", value='#0000FF')
-aspect_choice = st.sidebar.radio(label="Aspect Ratio", options=["1:1", "16:9", "4:3", "2:3", "Free"])
+aspect_choice = st.sidebar.radio(label="Aspect Ratio", options=["1:1", "16:9", "4:3", "2:3", "Free"], index=4)
 aspect_dict = {"1:1": (1,1),
                 "16:9": (16,9),
                 "4:3": (4,3),
@@ -27,4 +27,4 @@ if img_file:
     # Manipulate cropped image at will
     st.write("Preview")
     _ = cropped_img.thumbnail((150,150))
-    st.image(cropped_img)
+    st.image(cropped_img, use_column_width=True)
