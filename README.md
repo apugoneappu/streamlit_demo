@@ -3,7 +3,7 @@
 Presented as a ligtning talk on 4th June, 2021 at the Wadhwani Institute of Artificial Intelligence.  
 [Presentation link](https://docs.google.com/presentation/d/1evaObTTzYkH_zva2SCWoapq6LuLb2WP6pgcJ68wMDqI/edit?usp=sharing)
 
-### Steps to follow - 
+### Steps to follow 
 1. Install the requirements  
 `pip install -r requirements.txt`
 1. Run any of the following files with the command  
@@ -37,7 +37,7 @@ Custom components are for additional widget functionality that is not covered by
 8. In summary, replace `a` in the code without state by `state.a` and move the initialisation to the `get` function.
 9. Please compare `page.py` (without state) and `page_state.py` (with state) for an example use of state.
 
-### Distributing/Deplying a Streamlit app -  
+### Distributing/Deplying a Streamlit app  
 - (RECOMMENDED) Streamlit Sharing
     1. Log on to [streamlit sharing](https://streamlit.io/sharing) page through your Github account
     2. Pick the repo, branch and file that you want to deploy
@@ -59,7 +59,7 @@ Custom components are for additional widget functionality that is not covered by
     3. Users can run the app on their machine through  
 	`streamlit run <replace_gist_raw_url>` 
 
-### References -   
+### References   
 1. [Custom components gallery](https://streamlit.io/gallery?type=components&category=featured)  
 Before building a component, check this link if someone has already built it
 2. [Building custom components](https://docs.streamlit.io/en/stable/streamlit_components.html)
